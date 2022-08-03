@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('fondo.jpg') no-repeat;
+    background-size: cover;
+    font-family:  ' Century Gothic',sans-serif;
+}
+
+.box {
+    width: 500px;
+    background: rgba(0, 0, 0, .4);
+    margin: 0 auto;
+    margin-top: 4%;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.box-img {
+    
+    border-radius: 80%;
+}
+
+.box h1 {
+    font-size: 60px;
+    letter-spacing: 4px;
+    font-weight: 100;
+    margin: 30px 0 20px;
+}
+
+.box h2{
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.box p  {
+    text-align: justify ;
+}
+
+
+
+.jakelin{
+    background-color: transparent;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.menu-link {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 9px;
+}
+
+.nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;    
+}
+.menu-item {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    width: max-content;    
+}
+
+.menu-link:hover {
+    background-color: rgb(223, 83, 160);
+    transition: 0.5s;
+}
+.icono {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width: 768px) {
+    body{
+        padding-top: 70px;
+            background: url('fondo.jpg') no-repeat;
+            background-size: cover;
+            font-family:  ' Century Gothic',sans-serif;
+            position: absolute;
+        
+    }
+    .jakelin{
+        background-color: transparent;
+        height: 80px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+        background-color: #eba1f1a6; 
+        position: fixed; 
+        left: 0;
+        top:60px;
+        width: 100%; 
+        padding: 20px 0; 
+        height: calc(100% - 60px);
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.4s;
+    }
+    .menu-item {
+        line-height: 80px;    
+    }
+    .icono{
+        display: block;
+    }
+    .menu-visible{
+        left: 0;
+    }
+    
+
+}
